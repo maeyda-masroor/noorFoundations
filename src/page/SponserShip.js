@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 import { set, useForm } from "react-hook-form";
 import { useState } from "react";
 import { Link } from "react-router-dom";

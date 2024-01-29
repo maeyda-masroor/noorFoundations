@@ -1,7 +1,6 @@
 import NFSforEmpChildren from './page/NFSFormForEmpChildren';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Loading from "./component/Loading";
 import { useState,useEffect } from 'react';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
