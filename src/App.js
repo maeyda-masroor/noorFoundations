@@ -19,9 +19,13 @@ import AboutUs from './page/AboutUs';
 import History from './page/History';
 import OurExpenditure from './page/OurExpenditure';
 import OurTeam from './page/OurTeam';
+import React, {useContext} from 'react';
+import {Context} from "./component/Wrapper";
 import OurBoardOfTrustee from './component/OurBoardOfTrustee';
 import NFSforEmpThemselve from './page/NFSformForEmpThemselves';
-export default function App() {
+import Test from './component/Test';
+export default function App(props) {
+  const context = useContext(Context);
   const [loading, setLoading] = useState(true)
     useEffect(() => {
         setTimeout(() => setLoading(false), 3300)
@@ -29,12 +33,20 @@ export default function App() {
     if (loading) {
        return <Loading/>
     }
-  return (
-    <div className="App">
+    return (
+    <div class="App">
       <BrowserRouter>
+          <header style={{backgroundColor:'#faffffa',float:'left'}}>
+          <select value = {context.locale} onChange={context.selectLanguage} className=' text-white m-1' style={{backgroundColor:'black'}}>
+          <option value= 'en'>English</option>
+          <option value= 'fr'>French</option>
+          <option value= 'ar'>Arabic</option>
+        </select>
+        </header>
           <TopNavbar/>
           <Navbar/>
           <Routes>
+            <Route path = '/test' element={<Test/>}/>
             <Route path = "/" element={<Home/>}/>
             <Route path='/NewsAndStories' element={<NewsAndStories/>}/>
             <Route path='/NFSformforempChildren' element={<NFSforEmpChildren/>}/>

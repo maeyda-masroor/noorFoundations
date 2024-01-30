@@ -42,13 +42,13 @@ function MakeAnInquiry(){
     ,Detailoffamilymember,residenceown_rented,Name_of_Institute_taking_Admission,
     Nameofcourse,Benefitstoorganizationfromthecourse,RecommendationfromHR_Headofthedepartment
     };	
-        axios.post('https://sheet.best/api/sheets/65020aaa-0042-4ffb-9de7-056fe5ec9352',objt)
+        axios.post('https://sheet.best/api/sheets/19c28d68-27d7-4b45-a162-29897d059e69',objt)
         .then(response => {
             console.log(response);
         })
   
     };
-    return <div class="container"><h1>Noor Health Care and Education scholarship Form for Employee Kids</h1>
+    return <div class="container"><h1>Noor Health Care and Education scholarship Form for Employee Themselves</h1>
         <br/>
         <b><i><p><span style={{color:'red',fontSize:'25px',padding:'1rem'}}>*Note:This Form is Only  for ISHRAT HUSAIN PAKISTAN INSTITUTE OF LIVING AND LEARNING employees And Only For Current Employees</span></p></i></b>
         <br/>
@@ -123,7 +123,8 @@ function MakeAnInquiry(){
                     name="email"
                     {...register("email", {
                       required: true,
-                      pattern:/^[a-zA-Z0-9]+@([a-zA-Z0-9]+\.)+[A-Za-z]+$/i
+                      pattern:/^[a-zA-Z]+[.][a-zA-Z]+@pill\.org\.pk$/
+                    
                     })}
                     onChange={(e) => setMonthlyIncome(e.target.value)}
                     />
@@ -136,18 +137,19 @@ function MakeAnInquiry(){
                 </div>
                 <div class="col-12 col-sm-6">
                     <label for = "" style={{color:'white'}}>PILL Code</label>
-                    <input type="text" class="form-control border-0" placeholder="Your Mobile" propsstyle="height: 55px;"
+                    <input type="text" class="form-control border-0" placeholder="Your Code" propsstyle="height: 55px;"
                     name="code"
                     {...register("code", {
                       required: true,
-                      //pattern:/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/i
+                      pattern:/^\941|^[234]\d{3}$/
+
                     })}
                     onChange={(e) => setOtherSourceOfincome(e.target.value)}
                     />
-                  {errors.email && errors.email.type === "required" && (
+                  {errors.code && errors.code.type === "required" && (
                     <p className="errorMsg">Phone number is required. / Please put phonenumber in this format ... (123)12345678</p>
                   )}
-                  {errors.email && errors.email.type === "pattern" && (
+                  {errors.code && errors.code.type === "pattern" && (
                     <p className="errorMsg">Please put phoneNumber in this format ..... (123)12345678.</p>
                   )}
                 </div>
@@ -164,19 +166,19 @@ function MakeAnInquiry(){
                 </div>
                 
                 <div class="col-12 col-sm-6">
-                    <label for = "" style={{color:'white'}}>Student Name</label>
+                    <label for = "" style={{color:'white'}}>Details of Family Member</label>
                     <input type = "text" class="form-control border-0" rows="5" placeholder="Student Name" onChange={e=>{setdetailoffamilymember(e.target.value)}}
                   />
                 </div>
                 <div class="col-12 col-sm-6">
-                    <label for = "" style={{color:'white'}}>Father Name</label>
+                    <label for = "" style={{color:'white'}}>residence own rented</label>
                     <input type = "text" class="form-control border-0" rows="5" placeholder="student Name" onChange={(e)=>setresidenceown_rented(e.target.value)}
                     name="presentOrEx"
                     />
                 </div>
                 <div class="col-12 col-sm-6">
-                    <label for = "" style={{color:'white'}}>Student Age</label>
-                    <input type = "number" class="form-control border-0" rows="5" placeholder="Age Of student" onChange={(e)=>{setnameofinstitutetakingadmission(e.target.value)}}
+                    <label for = "" style={{color:'white'}}>Name of Institute taking Admission</label>
+                    <input type = "number" class="form-control border-0" rows="5" placeholder="name of institute taking admission" onChange={(e)=>{setnameofinstitutetakingadmission(e.target.value)}}
                     />
                 </div>
                 <div class="col-12 col-sm-6">
