@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ReactWhatsapp from 'react-whatsapp';
-
+import 'bootstrap/dist/css/bootstrap.css'; 
 function Navbar(){
     
  return <div>
