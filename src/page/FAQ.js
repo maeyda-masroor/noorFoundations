@@ -6,7 +6,7 @@ function FAQ() {
   return (
     <main>
       <div className='container'>
-        <h3>questions and answers about login</h3>
+        <h1>questions and answers about login</h1>
         <section className='info'>
           {questions.map((question) => {
             return (

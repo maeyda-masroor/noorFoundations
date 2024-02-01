@@ -1,3 +1,4 @@
+import NFSForm1 from './page/NFSEmpchildren';
 import NFSforEmpChildren from './page/NFSFormForEmpChildren';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
@@ -22,7 +23,7 @@ import OurTeam from './page/OurTeam';
 import React, {useContext} from 'react';
 import {Context} from "./component/Wrapper";
 import OurBoardOfTrustee from './component/OurBoardOfTrustee';
-import NFSforEmpThemselve from './page/NFSformForEmpThemselves';
+import NFSForm from './page/NFSForm';
 import Test from './component/Test';
 export default function App(props) {
   const context = useContext(Context);
@@ -34,7 +35,7 @@ export default function App(props) {
        return <Loading/>
     }
     return (
-    <div class="App">
+    <div>
       <BrowserRouter>
           <header style={{backgroundColor:'#faffffa',float:'left'}}>
           <select value = {context.locale} onChange={context.selectLanguage} className=' text-white m-1' style={{backgroundColor:'black'}}>
@@ -48,7 +49,7 @@ export default function App(props) {
           <Routes>
             <Route path = '/test' element={<Test/>}/>
             <Route path = "/" element={<Home/>}/>
-            <Route path='/NewsAndStories' element={<NewsAndStories/>}/>
+            <Route path='/newAndstories' element={<NewsAndStories/>}/>
             <Route path='/NFSformforempChildren' element={<NFSforEmpChildren/>}/>
             <Route path='/bankDetails' element={<BankDetails/>}/>
             <Route path='/help' element={<Help/>}/>
@@ -63,7 +64,8 @@ export default function App(props) {
             <Route path='/ourexpenditure' element={<OurExpenditure/>}/>
             <Route path='/ourTeam' element={<OurTeam/>}/>
             <Route path='/OurBoardOfTrustees' element={<OurBoardOfTrustee/>}/>
-            <Route path='/NFSformforempthemselves' element={<NFSforEmpThemselve/>}/>
+            <Route path='/NFSformforempthemselves' element={<NFSForm/>}/>
+            <Route path = '/NFS' element={<NFSForm1/>}/>
           </Routes>
           <Footer/>
           </BrowserRouter>

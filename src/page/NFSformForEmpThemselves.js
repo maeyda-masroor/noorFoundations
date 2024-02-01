@@ -27,6 +27,7 @@ function MakeAnInquiry(){
     const [Nameofcourse,setnameofcourse] =useState('');
     const [Benefitstoorganizationfromthecourse,setbenefittoorganizationfromthecourse] = useState('');
     const [RecommendationfromHR_Headofthedepartment,setRecommendationFormHR] =useState('');
+    const [dateofIssue,setDateOfIssue] = useState('');
     const {
       register,
       handleSubmit,
@@ -41,7 +42,7 @@ function MakeAnInquiry(){
     MonthlyIncome,OthersourcesofIncome,Father_Husband_Wifemonthlyincome
     ,Detailoffamilymember,residenceown_rented,Name_of_Institute_taking_Admission,
     Nameofcourse,Benefitstoorganizationfromthecourse,RecommendationfromHR_Headofthedepartment
-    };	
+    ,dateofIssue};	
         axios.post('https://sheet.best/api/sheets/19c28d68-27d7-4b45-a162-29897d059e69',objt)
         .then(response => {
             console.log(response);
@@ -58,6 +59,10 @@ function MakeAnInquiry(){
             <div class="row g-3">
                 <div>
                   <h1 style={{color:'black'}}>Details Of Employee</h1>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <label for="employeecode" class="form-label">Date of Issue Of Form:</label>
+                  <input type="date" class="form-control border-0" placeholder="Date of Issue" propsstyle="height: 55px;" onChange={(e) => setDateOfIssue(e.target.value)}/>
                 </div>
                 <div class="col-12 col-sm-6">
                     <label for="Employee Name:" style={{color:'white'}}>Employee Name</label>
@@ -178,7 +183,7 @@ function MakeAnInquiry(){
                 </div>
                 <div class="col-12 col-sm-6">
                     <label for = "" style={{color:'white'}}>Name of Institute taking Admission</label>
-                    <input type = "number" class="form-control border-0" rows="5" placeholder="name of institute taking admission" onChange={(e)=>{setnameofinstitutetakingadmission(e.target.value)}}
+                    <input type = "text" class="form-control border-0" rows="5" placeholder="name of institute taking admission" onChange={(e)=>{setnameofinstitutetakingadmission(e.target.value)}}
                     />
                 </div>
                 <div class="col-12 col-sm-6">

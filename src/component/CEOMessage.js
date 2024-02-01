@@ -41,7 +41,7 @@ Most people tend to take their health for granted and don’t think about availa
                     <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
                         <div class="row">
                             <div class="col-12 text-center">
-                                <img class="img-fluid w-75 circle bg-light p-3" src="3.jpeg" alt=""/>
+                                <img propstyle="img-fluid w-75 circle bg-light p-3" src="3.jpeg" alt=""/>
                             </div>
                         </div>
                     </div>
