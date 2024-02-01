@@ -1,5 +1,5 @@
-import NFSForm1 from './page/NFSEmpchildren';
-import NFSforEmpChildren from './page/NFSFormForEmpChildren';
+import NFSEmpChildren from './page/NFSEmpchildren';
+import NFSEmpthemselves from './page/NFSEmpthemselves';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 import Loading from "./component/Loading";
@@ -23,7 +23,7 @@ import OurTeam from './page/OurTeam';
 import React, {useContext} from 'react';
 import {Context} from "./component/Wrapper";
 import OurBoardOfTrustee from './component/OurBoardOfTrustee';
-import NFSForm from './page/NFSForm';
+
 import Test from './component/Test';
 export default function App(props) {
   const context = useContext(Context);
@@ -50,7 +50,6 @@ export default function App(props) {
             <Route path = '/test' element={<Test/>}/>
             <Route path = "/" element={<Home/>}/>
             <Route path='/newAndstories' element={<NewsAndStories/>}/>
-            <Route path='/NFSformforempChildren' element={<NFSforEmpChildren/>}/>
             <Route path='/bankDetails' element={<BankDetails/>}/>
             <Route path='/help' element={<Help/>}/>
             <Route path='/contact' element={<Contact/>}/>
@@ -64,8 +63,8 @@ export default function App(props) {
             <Route path='/ourexpenditure' element={<OurExpenditure/>}/>
             <Route path='/ourTeam' element={<OurTeam/>}/>
             <Route path='/OurBoardOfTrustees' element={<OurBoardOfTrustee/>}/>
-            <Route path='/NFSformforempthemselves' element={<NFSForm/>}/>
-            <Route path = '/NFS' element={<NFSForm1/>}/>
+            <Route path='/nfs' element={<NFSEmpChildren/>}/>
+            <Route path='/NFSformforempthemselves' element={<NFSEmpthemselves/>}/>
           </Routes>
           <Footer/>
           </BrowserRouter>

@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-function NFSforEmpChildren(){
+function NFSEmpChildren(){
     const [DateOfIssue,setDateOfIssue] = useState('');
     const [errorMessaagre, setErrorMessage] = React.useState("");
     const [StudentFatherName,setStudentFatherName] = useState('');
@@ -545,6 +545,10 @@ function NFSforEmpChildren(){
                   )}
             </div>
             <div class="col-12">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" required/>
+                <label for="vehicle1"> I here by decalre that all the provided information is true</label>
+            </div>
+            <div class="col-12">
                 <button class="btn btn-primary w-100 py-3" type="submit">Submit Form</button>
             </div>
         </div>
@@ -552,4 +556,4 @@ function NFSforEmpChildren(){
 </div>
 </div>
 }
-export default NFSforEmpChildren;
+export default NFSEmpChildren;

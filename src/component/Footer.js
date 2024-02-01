@@ -44,22 +44,19 @@ function Footer(){
                         <h3 class="text-white mb-4">Photo Gallery</h3>
                         <div class="row g-2 pt-2">
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-1.jpg" alt=""/>
+                                <img class="img-fluid rounded bg-light p-1" src="1.jpeg" alt=""/>
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-2.jpg" alt=""/>
+                                <img class="img-fluid rounded bg-light p-1" src="2.jpeg" alt=""/>
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-3.jpg" alt=""/>
+                                <img class="img-fluid rounded bg-light p-1" src="3.jpeg" alt=""/>
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-4.jpg" alt=""/>
+                                <img class="img-fluid rounded bg-light p-1" src="4.jpeg" alt=""/>
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-5.jpg" alt=""/>
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="img/classes-6.jpg" alt=""/>
+                                <img class="img-fluid rounded bg-light p-1" src="5.jpeg" alt=""/>
                             </div>
                         </div>
                     </div>
