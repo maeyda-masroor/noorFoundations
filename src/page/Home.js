@@ -9,17 +9,17 @@ import OurBoardOftrustee from '../component/OurBoardOfTrustee';
 import Sponsers from '../component/SponserShipList';
 import Testinomial from '../component/Testinomial';
 import Subscribe from '../component/subscribe';
+import Introduction from '../component/Introduction';
 function Home(){
     return <div>
         <ImageSlider/>
+        <Introduction/>
         <AimGoalVision/>
         <CEOmessage/>
-        <RegisterForASponsership/>
         <HappyStudent/>
         <MakeAppointment/>
         <OurTeam/>
         <OurBoardOftrustee/>
-        <Sponsers/>
         <Testinomial/>
     </div>
 }

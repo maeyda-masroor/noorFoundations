@@ -22,32 +22,32 @@ function HappyStudent(){
                   <div class="col-12 col-sm-6">
                     <div class="card border-0 border-bottom border-primary shadow-sm mb-4">
                       <div class="card-body text-center p-4 p-xxl-5">
-                        <h3 class="display-2 fw-bold mb-2">60</h3>
-                        <p class="fs-5 mb-0 text-secondary">Finished Projects</p>
+                        <h3 class="display-1 fw-bold mb-2" style={{fontSize:'50px'}}>36</h3>
+                        <p class="fs-5 mb-0 text-secondary">Supporting Happy Students</p>
                       </div>
                     </div>
                     <div class="card border-0 border-bottom border-primary shadow-sm">
                       <div class="card-body text-center p-4 p-xxl-5">
-                        <h3 class="display-2 fw-bold mb-2">18k+</h3>
-                        <p class="fs-5 mb-0 text-secondary">Issues Solved</p>
+                        <h3 class="display-3 fw-bold mb-2" style={{fontSize:'50px'}}>0 - 11 Grade</h3>
+                        <p class="fs-5 mb-0 text-secondary">Class range</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6">
                     <div class="card border-0 border-bottom border-primary shadow-sm mt-lg-6 mt-xxl-8 mb-4">
                       <div class="card-body text-center p-4 p-xxl-5">
-                        <h3 class="display-2 fw-bold mb-2">10k+</h3>
-                        <p class="fs-5 mb-0 text-secondary">Happy Customers</p>
+                        <h3 class="display-3 fw-bold mb-2" style={{fontSize:'50px'}}>Under 18 </h3>
+                        <p class="fs-5 mb-0 text-secondary">Age range of the students is between 3years to 18 years.</p>
                       </div>
                     </div>
                     <div class="card border-0 border-bottom border-primary shadow-sm">
                       <div class="card-body text-center p-4 p-xxl-5">
-                        <h3 class="display-2 fw-bold mb-2">78</h3>
-                        <p class="fs-5 mb-0 text-secondary">Awwwards</p>
+                        <h3 class="display-3 fw-bold mb-2" style={{fontSize:'50px'}}>PILL Students</h3>
+                        <p class="fs-5 mb-0 text-secondary">less privileged areas of Karachi and surroundings.</p>
                       </div>
                     </div>
-                  </div>
-                </div>
+                    </div>
+                    </div>
               </div>
             </div>
           </div>

@@ -38,6 +38,8 @@ function Test(props) {
            day = 'numeric'
            weekday = 'long'
        />
+       <br/>
+       <FormattedMessage id='welcome' defaultMessage="come" />
      </header>
    </div>
  );

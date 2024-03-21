@@ -36,7 +36,6 @@ function Footer(){
                         <h3 class="text-white mb-4">Quick Links</h3>
                         <Link class="btn btn-link text-white-50" to="/help">Reach For Help</Link>
                         <Link class="btn btn-link text-white-50" to="/contact">Contact Us</Link>
-                        <Link class="btn btn-link text-white-50" to="/services">Our Services</Link>
                         <Link class="btn btn-link text-white-50" to="/procedure_policy">Procedure & Policy</Link>
                         <Link class="btn btn-link text-white-50" to='/gallery'>Gallery</Link>
                      </div>

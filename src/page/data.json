@@ -6,7 +6,8 @@
         "icon": "apple",
         "para": "Apple designs, manufactures, and markets a broad range of consumer technology products, including smartphones, personal computers, tablets, wearable devices, home entertainment devices, and more. Some of its most popular products include its iPhone smartphones and Mac computers. Apple also has dramatically expanded its sales from services. It operates digital content stores and recently launched several streaming services, including Apple+, a platform for on-demand entertainment content.",
         "note": "April 1, 1976",
-        "url": "www.apple.com"
+        "url": "www.apple.com",
+        "image":"1.jpeg"
     },
     {
         "id": 2,
@@ -46,39 +47,12 @@
     },
     {
         "id": 6,
-        "title": "Google Inc.",
-        "subtitle": "Revenue (TTM): US$66 billion (2014)",
+        "title": "Financial Report",
+        "subtitle": "Financial Report",
         "icon": "google",
-        "para": "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. It is considered one of the Big Four technology companies alongside Amazon, Apple, and Microsoft.",
-        "note": "September 4, 1998",
-        "url": "www.gogle.com"
-    },
-    {
-        "id": 7,
-        "title": "LinkedIn",
-        "subtitle": "Revenue (TTM): US$6.8 billion (2019)",
-        "icon": "linkedin",
-        "para": "LinkedIn is an American business and employment-oriented online service that operates via websites and mobile apps. Launched on May 5, 2003,[3] it is mainly used for professional networking, including employers posting jobs and job seekers posting their CVs. As of 2015, most of the company's revenue came from selling access to information about its members to recruiters and sales professionals.",
-        "note": "December 28, 2002",
-        "url": "www.linkedin.com"
-    },
-    {
-        "id": 8,
-        "title": "Amazon.com Inc.",
-        "subtitle": "Revenue (TTM): US$280.522 billion (2019)",
-        "icon": "amazon",
-        "para": "Amazon.com, Inc. is an American multinational conglomerate technology company based in Seattle that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. It is considered one of the Big Four technology companies, along with Google, Apple, and Microsoft. It has been referred to as 'one of the most influential economic and cultural forces in the world' as well as the world's most valuable brand.",
-        "note": "July 5, 1994",
-        "url": "www.amazon.com"
-    },
-    {
-        "id": 9,
-        "title": "Airbnb, Inc.",
-        "subtitle": "Revenue (TTM): US$2.6 billion (2016)",
-        "icon": "airbnb",
-        "para": "Airbnb, Inc. is an American online marketplace company based in San Francisco, California, United States. Airbnb offer arrangement for lodging, primarily homestays, or tourism experiences. The company does not own any of the real estate listings, nor does it host events; it acts as a broker, receiving commissions from each booking.",
-        "note": "August 2008",
-        "url": "www.airbnb.com"
+        "para": "In the Year 2019, Noor Fellow ship’s raised PKR 690,000/-. In the Year 2019, we spend 640,000/-.2019 was the first year of surplus for Noor fellowship.In past years, Noor fellowship was always in a deficit.",
+        "note": "date",
+        "url": "www.noorfoundation.com"
     }        
 
 ]

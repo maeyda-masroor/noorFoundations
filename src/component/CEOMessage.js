@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
 function CEOmessage(){
   const [isShowMore, setIsShowMore] = useState(false);
   const toggleReadMoreLess = () => {
@@ -10,16 +11,18 @@ function CEOmessage(){
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-4">CEO Message</h1>
-                        <p  style={{color:'#986931',fontFamily:'Serif'}}>We have a vision at Remedial Centre to provide medical services to the local community at reasonable costs delivered by competent doctors, caring staff, and modern equipment with prompt response to medical emergencies.
+                        <h1 class="mb-4"><FormattedMessage id= 'ceoMessage' default ="CEO Message"/></h1>
+                        <p  style={{color:'#986931',fontFamily:'Serif'}}>
+                        Dear Friends,
 
-Most people tend to take their health for granted and don’t think about available health care resources until a medical emergency arises. Staff at Remedial Hospital spend a great deal of time and energy planning to meet community’s health care needs and want to offer the best medical and emergency care possible for your family and friends that may have need of our services.
-         </p>
+In the heart of our mission at Noor Education & Healthcare Foundation is a commitment to leave no one behind, blending education and healthcare into a tapestry of support for the underprivileged. Our vision is ambitious yet grounded in the belief that sustainable upliftment in education and health can transform communities from the inside out.
+                        </p>
                         {isShowMore && (
                         <p style={{color:'#986931',fontFamily:'Serif'}}>
-                        We may be small, but we’re capable of handling just about any emergency situation that may arise. We’re proud of our record of superior quality, efficient service, friendly caring staff and reasonable cost of care. We are pleased that our patients continually praise the competence and caring attitudes of our nursing staff and physicians.
+                            Through our work, we strive to light the way for those in need, connecting them with essential services and inspiring a wave of support from donors, volunteers, and advocates. Our initiatives, from enhancing children's nutrition to advocating for the education of frontline workers' children and promoting girls' education, are more than programs; they are lifelines to a brighter future..
 
-                        We are more than just a hospital, we organize health awareness programmes, school health checkups, occupational health, vaccination camps and free health and well being clinics. As a community hospital, we thrive on your feedback and support. We recognize our responsibility to provide you with the best health care available and ensure that our staff delivers on that promise every day. So when you or your family needs medical services, you can count on us! And we’re there when you need us.
+I invite you to join us in this noble cause. Your support, whether through donations, volunteering, or simply spreading the word, is invaluable. Together, we are not just dreaming of a better tomorrow; we are actively building it, one life at a time. Thank you for standing with us, for believing in our mission, and for being an integral part of our story of hope and transformation.
+
                         </p>
                         )}
                         <div class="row g-4 align-items-center">

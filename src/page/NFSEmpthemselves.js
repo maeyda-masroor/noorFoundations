@@ -54,7 +54,12 @@ function NFSEmpthemselves(){
     <div class="h-100 d-flex flex-column justify-content-center p-5">
     <h1 class="mb-4">Noor HealthCare And Education Foundation Scholarship Form For Emplolyees' Children</h1>
     <br/>
-        <b><i><p><span style={{color:'red',fontSize:'25px',padding:'1rem'}}>*Note:This Form is Only  for ISHRAT HUSAIN PAKISTAN INSTITUTE OF LIVING AND LEARNING employees And Only For Current Employees</span></p></i></b>
+        <b><i><p><span style={{color:'red',fontSize:'25px',padding:'1rem'}}>*Note:Parent / Guardian of the student must be a permanent employee of the PILL, Remedial Medical Centre or Husain Remedies.
+        <br/>
+        Employment must not be less then 1 year.
+        <br/>
+        Kids of Consultants, Internees, Hourly Based, and other workers are not eligible for the Scholarship.
+   </span></p></i></b>
     <br/>
     <form onSubmit={handleSubmit(onSubmit)}>
         <div>

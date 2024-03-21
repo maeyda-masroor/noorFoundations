@@ -17,6 +17,7 @@ class TimeLine extends Component {
                         <div className="col-card-subtitle col-card-subtitle-left">{item.subtitle}</div>
                         <div className="col-card-para">
                             {item.para}
+                            <img src = {item.image} width={100} height={100}/>
                         </div>
                         <a className="numberCircle" href={protocol+ item.url} target="_blank">{item.url}</a>
                     </div>
@@ -26,7 +27,7 @@ class TimeLine extends Component {
                 <div className="column-right" >
                     <div className="col-note col-note-right">
                         <p>{item.note}</p>
-                    </div>
+                        </div>
                 </div>
             }
 

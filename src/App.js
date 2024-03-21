@@ -1,3 +1,4 @@
+import Flyer from './page/Flyers';
 import NFSEmpChildren from './page/NFSEmpchildren';
 import NFSEmpthemselves from './page/NFSEmpthemselves';
 import Navbar from './component/Navbar';
@@ -23,7 +24,7 @@ import OurTeam from './page/OurTeam';
 import React, {useContext} from 'react';
 import {Context} from "./component/Wrapper";
 import OurBoardOfTrustee from './component/OurBoardOfTrustee';
-
+import NoPage from './page/404Page';
 import Test from './component/Test';
 export default function App(props) {
   const context = useContext(Context);
@@ -37,7 +38,7 @@ export default function App(props) {
     return (
     <div>
       <BrowserRouter>
-          <header style={{backgroundColor:'#faffffa',float:'left'}}>
+      <header style={{backgroundColor:'#faffffa',float:'left'}}>
           <select value = {context.locale} onChange={context.selectLanguage} className=' text-white m-1' style={{backgroundColor:'black'}}>
           <option value= 'en'>English</option>
           <option value= 'fr'>French</option>
@@ -47,6 +48,7 @@ export default function App(props) {
           <TopNavbar/>
           <Navbar/>
           <Routes>
+            <Route path='/flyer' element={<Flyer/>}/>
             <Route path = '/test' element={<Test/>}/>
             <Route path = "/" element={<Home/>}/>
             <Route path='/newAndstories' element={<NewsAndStories/>}/>
@@ -65,6 +67,7 @@ export default function App(props) {
             <Route path='/OurBoardOfTrustees' element={<OurBoardOfTrustee/>}/>
             <Route path='/nfs' element={<NFSEmpChildren/>}/>
             <Route path='/NFSformforempthemselves' element={<NFSEmpthemselves/>}/>
+            <Route path='*' element={<NoPage/>}/>
           </Routes>
           <Footer/>
           </BrowserRouter>
