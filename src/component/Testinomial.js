@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import people from './TestinomialData';
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
+import { FormattedMessage } from 'react-intl';
 const Testimonial = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
@@ -38,7 +39,7 @@ const Testimonial = () => {
         <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" propsstyle="max-width: 600px;">
-                <h1 style={{fontSize:'45px'}}>What Our Student Says!</h1>
+                <h1 style={{fontSize:'45px'}}><FormattedMessage id = "clientsays" defaultMessage="what our client says!"/></h1>
             </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src={image} width={100} height={100}/>

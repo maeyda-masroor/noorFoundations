@@ -20,7 +20,7 @@ import Sponsership from './page/SponserShip';
 import AboutUs from './page/AboutUs';
 import History from './page/History';
 import OurExpenditure from './page/OurExpenditure';
-import OurTeam from './page/OurTeam';
+import OurTeam from './component/OurTeam';
 import React, {useContext} from 'react';
 import {Context} from "./component/Wrapper";
 import OurBoardOfTrustee from './component/OurBoardOfTrustee';
@@ -41,15 +41,13 @@ export default function App(props) {
       <header style={{backgroundColor:'#faffffa',float:'left'}}>
           <select value = {context.locale} onChange={context.selectLanguage} className=' text-white m-1' style={{backgroundColor:'black'}}>
           <option value= 'en'>English</option>
-          <option value= 'fr'>French</option>
-          <option value= 'ar'>Arabic</option>
+          <option value= 'ar'>urdu</option>
         </select>
         </header>
           <TopNavbar/>
           <Navbar/>
           <Routes>
             <Route path='/flyer' element={<Flyer/>}/>
-            <Route path = '/test' element={<Test/>}/>
             <Route path = "/" element={<Home/>}/>
             <Route path='/newAndstories' element={<NewsAndStories/>}/>
             <Route path='/bankDetails' element={<BankDetails/>}/>

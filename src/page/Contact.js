@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { FormattedMessage } from "react-intl";
 function Contact(){
     const [email,setEmail] = useState('');
     const [name,setname] = useState('');
@@ -23,9 +24,9 @@ function Contact(){
     return <div class="container">
        <section class="mb-4">
 
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
+    <h2 class="h1-responsive font-weight-bold text-center my-4"><FormattedMessage id = 'contactus' defaultMessage='Contact Us'/></h2>
+    <p class="text-center w-responsive mx-auto mb-5"><FormattedMessage id = "description1" defaultMessage='Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.'/></p>
 
     <div class="row">
 
@@ -35,7 +36,7 @@ function Contact(){
 
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <label for="name" class="">Your name</label>
+                            <label for="name" class=""><FormattedMessage id = "name" defaultMessage="Your Name"/></label>
                             <input type="text" id="name" name="name" class="form-control"
                             {...register("name", {
                                 required: true,
@@ -47,7 +48,7 @@ function Contact(){
                     </div>
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <label for="email" class="">Your email</label>
+                            <label for="email" class=""><FormattedMessage id="email" defaultMessage="your email"/></label>
                             <input type="email" id="email" name="email" class="form-control"
                              {...register("email", {
                                 required: true,
@@ -69,7 +70,7 @@ function Contact(){
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                        <label for="subject" class="">Subject</label>
+                        <label for="subject" class=""><FormattedMessage id = "subject" defaultMessage="Subject"/></label>
                         <input type="text" id="subject" name="subject" class="form-control"
                         onChange={e=>setSubject(e.target.value)}
                         />
@@ -82,7 +83,7 @@ function Contact(){
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <label for="message">Your message</label>
+                            <label for="message"><FormattedMessage id = "subject" defaultMessage="your subject"/></label>
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"
                             onChange={e=>setMessage(e.target.value)}
                             ></textarea>
@@ -95,7 +96,7 @@ function Contact(){
              
             <br/>
             <div class="text-center text-md-left">
-                <button class="btn btn-primary" type="submit">Send</button>
+                <button class="btn btn-primary" type="submit"><FormattedMessage id  = "send" defaultMessage="send"/></button>
             </div>
             </form>
             <div class="status"></div>
